@@ -1,0 +1,16 @@
+#include <iostream>
+#include<stack>
+using namespace std;
+int main() {
+stack<string>s;
+s.push("miss");
+s.push("pyari");
+s.push("k");
+cout<<"size before pop->"<<s.size()<<endl;
+cout<<"first element->"<<s.top()<<endl;
+s.pop();
+cout<<"top element->"<<s.top()<<endl;
+cout<<"size of stack->"<<s.size();
+cout<<endl;
+cout<<"is empty->"<<s.empty()<<endl;
+}
