@@ -1,0 +1,30 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <set>
+#include <algorithm>
+using namespace std;
+int main() {
+    set<int>s;
+    int q;
+    cin>>q;
+    int x,t;
+    while(q>0){
+        cin>>t;
+        if(t==1){
+            cin>>x;
+            s.insert(x);
+        }
+            else if(t==2){
+                cin>>x;
+                s.erase(x);
+            }
+            else{
+                cin>>x;
+                cout<<(s.find(x)==s.end()?"No":"Yes")<<endl;
+            }
+            q--;
+            }
+            return 0;
+        }
