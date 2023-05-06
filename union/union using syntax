@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+union money{
+int rice;
+char ball;
+float pounds;
+};
+int main() {
+int rice;
+char ball;
+union money m1;
+m1.rice=34;
+m1.ball='c';
+cout<<m1.ball;
+return 0;
+}
+//output->c
