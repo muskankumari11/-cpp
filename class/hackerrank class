@@ -1,0 +1,50 @@
+#include <iostream>
+#include <sstream>
+using namespace std;
+class Student {
+    int age;
+    string first_name;
+    string last_name;
+    int standard;
+public:
+    void set_age(int value) {
+        age = value;
+    }
+    int get_age() const {
+        return age;
+    }
+    void set_first_name(string value) {
+        first_name = value;
+    }
+    string get_first_name() const {
+        return first_name;
+    }
+    void set_last_name(string value) {
+        last_name = value;
+    }
+    string get_last_name() const {
+        return last_name;
+    }
+    void set_standard(int value) {
+        standard = value;
+    }
+    int get_standard() const {
+        return standard;
+    }
+};
+int main() {
+    Student s;
+    int age, standard;
+    string first_name, last_name;
+    cin >> age >> first_name >> last_name >> standard;
+    s.set_age(age);
+    s.set_first_name(first_name);
+    s.set_last_name(last_name);
+    s.set_standard(standard);
+    cout << s.get_age() << endl;
+    cout << s.get_last_name() << ", " << s.get_first_name() << endl;
+    cout << s.get_standard()<<endl<<endl;
+    stringstream ss("15,john,carmack,10");
+    cout << age<<","<< first_name<<"," << last_name<<","<< standard;
+    return 0;
+}
